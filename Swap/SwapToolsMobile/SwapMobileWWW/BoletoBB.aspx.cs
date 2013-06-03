@@ -46,7 +46,7 @@ namespace SwapMobileWWW
             //Dim geraBoleto As New HTMLBoleto()
             geraBoleto.ImagesFolder = "imagesBoleto";
             geraBoleto.AddBoleto(bolBB);
-            geraBoleto.SaveToFile("boletoBB");
+            geraBoleto.SaveToFile((Server.MapPath("/")+"\\boletoBB"));
             Response.Write(geraBoleto.ToString());
         }
     }
