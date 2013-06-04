@@ -12,11 +12,44 @@ namespace SwapMobileWWW
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string banco = string.Empty;
+            banco = Request.QueryString["banco"].ToString();
+            switch (banco)
+            {
+                "bb":gerarBoletoBB();
+                    break;
+            }
             gerarBoletoBB();
         }
 
         private void gerarBoletoBB()
         {
+            BoletoBradesco bolBRD = new BoletoBradesco();
+            bolBRD.Aceite = false;// System.Web.Profile.DadosCedente("Aceite")
+            bolBRD.CedenteAgencia = "001";// Profile.DadosCedente("AgenciaCedente")
+            bolBRD.CedenteConta = "0012345-0";// Profile.DadosCedente("ContaCedente")
+            bolBRD.CedenteContaDV = "99";// Profile.DadosCedente("DVContaCedente")
+            bolBRD.CedenteNome = "Swap Informática";// Profile.DadosCedente("NomeCedente")
+            bolBRD.Carteira = 32; //Int32.Parse(Profile.DadosCedente("Carteira"))
+            bolBRD.Instrucao1 = "Pagar ainda hoje de preferência";// Profile.DadosCedente("instrucao")
+            
+            bolBRD.Sequencial = 1;//Convert.ToInt32(Profile.DadosDocumento("Sequencial"))
+            bolBRD.Documento = "112345";//Profile.DadosDocumento("NumeroDocumento")
+            bolBRD.DtDocumento = Convert.ToDateTime(DateTime.Now);//  .DadosDocumento("DataDocumento"))
+            bolBRD.DtEmissao = Convert.ToDateTime(DateTime.Now);// Profile.DadosDocumento("DataEmissao"))
+            bolBRD.DtProcessamento = Convert.ToDateTime(DateTime.Now);// Profile.DadosDocumento("DataProcessamento"))
+            bolBRD.DtVencimento = Convert.ToDateTime(DateTime.Now);// Profile.DadosDocumento("DataVencimento"))
+            bolBRD.Valor = 100.98f;// CSng( Convert.ToDouble(Profile.DadosDocumento("Valor")))
+            
+            bolBRD.SacadoNome = Request.QueryString["sacado"].ToString();// Luciano Gay";// Profile.DadosCliente("NomeSacado")
+            bolBRD.SacadoEndereco = Request.QueryString["endereco"].ToString();// "Rua das dores";// Profile.DadosCliente("EnderecoSacado")
+            bolBRD.SacadoCPF_CNPJ = Request.QueryString["cpf"].ToString();// "05.599.090/0001-99";// Profile.DadosCliente("CPF_CNPJSacado")
+            bolBRD.SacadoCidade = Request.QueryString["cidade"].ToString();// "Juiz de Fora";// Profile.DadosCliente("Cidade")
+            bolBRD.SacadoUF = Request.QueryString["uf"].ToString(); //"MG";// Profile.DadosCliente("Estado")
+            bolBRD.SacadoBairro = Request.QueryString["bairro"].ToString();// "Centro";//Profile.DadosCliente("Bairro")
+            bolBRD.SacadoCEP = Request.QueryString["cep"].ToString(); //"98989-000";// Profile.DadosCliente("Cep")
+
+
             BoletoBrasil bolBB = new BoletoBrasil();
 
             bolBB.Aceite = false;// System.Web.Profile.DadosCedente("Aceite")
