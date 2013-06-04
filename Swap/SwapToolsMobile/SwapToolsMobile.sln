@@ -3,6 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwapMobileWWW", "SwapMobileWWW\SwapMobileWWW.csproj", "{1E5608E9-D8EA-4E70-ABC6-14969E5D2D6B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Referencias", "Referencias", "{044EA8F2-C428-4E66-B937-186FAB403033}"
+	ProjectSection(SolutionItems) = preProject
+		References\Google.Apis.Urlshortener.v1.dll = References\Google.Apis.Urlshortener.v1.dll
+		References\GoogleAPI.UrlShortener.dll = References\GoogleAPI.UrlShortener.dll
+		References\GoogleAPI.UrlShortener.dll.config = References\GoogleAPI.UrlShortener.dll.config
+		References\HumanAPIClient.dll = References\HumanAPIClient.dll
+		References\HumanAPIClient.xml = References\HumanAPIClient.xml
+		References\MyGeneration.dOOdads_2005.dll = References\MyGeneration.dOOdads_2005.dll
+		References\SwapMobile.dll = References\SwapMobile.dll
+		References\SwapMobileWWW.dll = References\SwapMobileWWW.dll
+		References\SwapMobileWWW.pdb = References\SwapMobileWWW.pdb
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
