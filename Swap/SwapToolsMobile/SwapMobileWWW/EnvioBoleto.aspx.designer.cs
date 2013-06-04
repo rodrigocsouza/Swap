@@ -76,6 +76,33 @@ namespace SwapMobileWWW {
         protected global::System.Web.UI.WebControls.TextBox txbCEP;
         
         /// <summary>
+        /// txbValor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txbValor;
+        
+        /// <summary>
+        /// ddlBanco control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlBanco;
+        
+        /// <summary>
+        /// txbMensagem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txbMensagem;
+        
+        /// <summary>
         /// txbDDD control.
         /// </summary>
         /// <remarks>
@@ -119,5 +146,32 @@ namespace SwapMobileWWW {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblResultado;
+        
+        /// <summary>
+        /// hlLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlLink;
+        
+        /// <summary>
+        /// hlLinkReduzida control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlLinkReduzida;
+        
+        /// <summary>
+        /// lblMsgEnviada control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMsgEnviada;
     }
 }

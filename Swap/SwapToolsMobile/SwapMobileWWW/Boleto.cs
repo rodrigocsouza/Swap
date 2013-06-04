@@ -1216,5 +1216,13 @@ namespace dotnetraptors.Brazil.Boleto
                 
 		}
 	}
-	
+
+    public enum Bancos
+    {
+        Bradesco,
+        Itau,
+        Brasil,
+        HSBC,
+        CEF
+    }
 }

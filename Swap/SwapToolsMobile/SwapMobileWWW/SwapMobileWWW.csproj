@@ -32,26 +32,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Google.Apis.Urlshortener.v1, Version=1.3.0.15233, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Google.Apis.Urlshortener.v1.dll</HintPath>
+    <Reference Include="Google.Apis.Urlshortener.v1">
+      <HintPath>..\References\Google.Apis.Urlshortener.v1.dll</HintPath>
     </Reference>
-    <Reference Include="GoogleAPI.UrlShortener, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\GoogleAPI.UrlShortener.dll</HintPath>
+    <Reference Include="GoogleAPI.UrlShortener">
+      <HintPath>..\References\GoogleAPI.UrlShortener.dll</HintPath>
     </Reference>
-    <Reference Include="HumanAPIClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\HumanAPIClient.dll</HintPath>
+    <Reference Include="HumanAPIClient">
+      <HintPath>..\References\HumanAPIClient.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MyGeneration.dOOdads_2005, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\MyGeneration.dOOdads_2005.dll</HintPath>
+    <Reference Include="MyGeneration.dOOdads_2005">
+      <HintPath>..\References\MyGeneration.dOOdads_2005.dll</HintPath>
     </Reference>
-    <Reference Include="SwapMobile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\SwapMobile.dll</HintPath>
+    <Reference Include="SwapMobile">
+      <HintPath>..\References\SwapMobile.dll</HintPath>
     </Reference>
     <Reference Include="System.Management" />
     <Reference Include="System.Net" />
@@ -144,12 +139,12 @@
       <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Boleto.cs" />
-    <Compile Include="BoletoBB.aspx.cs">
-      <DependentUpon>BoletoBB.aspx</DependentUpon>
+    <Compile Include="Boleto.aspx.cs">
+      <DependentUpon>Boleto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BoletoBB.aspx.designer.cs">
-      <DependentUpon>BoletoBB.aspx</DependentUpon>
+    <Compile Include="Boleto.aspx.designer.cs">
+      <DependentUpon>Boleto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -208,7 +203,7 @@
     <Content Include="Admin\ModelosClientes.aspx" />
     <Content Include="Admin\Usuarios.aspx" />
     <Content Include="ArquivoTesteEnvio.txt" />
-    <Content Include="BoletoBB.aspx" />
+    <Content Include="Boleto.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="EnvioBoleto.aspx" />
     <Content Include="Global.asax" />
@@ -217,7 +212,10 @@
     <Content Include="imagesBoleto\barra.gif" />
     <Content Include="imagesBoleto\BBLogo.gif" />
     <Content Include="imagesBoleto\BradescoLogo.gif" />
+    <Content Include="imagesBoleto\CEFlogo.gif" />
     <Content Include="imagesBoleto\corte.gif" />
+    <Content Include="imagesBoleto\HSBCLogo.gif" />
+    <Content Include="imagesBoleto\ItauLogo.gif" />
     <Content Include="imagesBoleto\p.gif" />
     <Content Include="Images\Icons\access_black.png" />
     <Content Include="Images\Icons\access_blue.png" />
@@ -523,7 +521,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1057</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/SwapMobileWWW</IISUrl>
+          <IISUrl>http://localhost/SwapTools</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

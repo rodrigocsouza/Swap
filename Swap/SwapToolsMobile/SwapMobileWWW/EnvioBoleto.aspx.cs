@@ -36,18 +36,26 @@ namespace SwapMobileWWW
                 SimpleMessage message = new SimpleMessage();
 
                 message.To = string.Format("55{0}{1}", txbDDD.Text, txbCelular.Text);
-                string msg = "Prezado Cliente, o seu boleto encontra-se disponível no link ";
+                string msg = txbMensagem.Text+" ";
                 EncurtadorURL encurtador = new EncurtadorURL();
-                string urlReduzida = encurtador.LengthenUrl(ConfigurationManager.AppSettings["URLBOLETO"].ToString() + "?sacado=" + txbNome.Text + "&endereco=" + txbEndereco.Text + "&cpf=" + txbCPF.Text + "&cidade=" + txbCidade.Text + "&uf=" + txbUF.Text + "&bairro=" + txbBairro.Text + "&cep=" + txbCEP.Text);// "http://localhost:1057/BoletoBB.aspx");
+                string url = ConfigurationManager.AppSettings["URLBOLETO"].ToString() + "?banco="+ddlBanco.SelectedValue+"&sacado=" + txbNome.Text + "&endereco=" + txbEndereco.Text + "&cpf=" + txbCPF.Text + "&cidade=" + txbCidade.Text + "&uf=" + txbUF.Text + "&bairro=" + txbBairro.Text + "&cep=" + txbCEP.Text+"&valor="+txbValor.Text.Replace('.',',');
+                string urlReduzida = encurtador.LengthenUrl(url);// "http://localhost:1057/BoletoBB.aspx");
                 msg += urlReduzida;
                 message.Message = RemoverAcentos(msg);
                 contador++;
                 message.Id = contador.ToString("0000");
+                lblMsgEnviada.Text = message.Message;
+                hlLink.NavigateUrl = url;
+                hlLink.Text = url;
+
+                hlLinkReduzida.NavigateUrl = urlReduzida;
+                hlLinkReduzida.Text = urlReduzida;
                 List<String> response = sms.send(message);
 
                 lblResultado.Text = "SMS com boleto enviado com sucesso!";
                 SalvarUltimoID(contador);
                 btnEnviar.Enabled = false;
+                btnLimpar.Enabled = true;
             }
             catch (Exception exx)
             {
@@ -142,6 +150,16 @@ namespace SwapMobileWWW
                 }
             }
             return sb.ToString();
+        }
+
+        protected void txbBairro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnLimpar_Click(object sender, EventArgs e)
+        {
+            btnEnviar.Enabled = true;
         }
     }
 }
