@@ -1,0 +1,6 @@
+<dxtc:ASPxTabControl runat="server" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" CssPostfix="Aqua" TabSpacing="3px">
+    <Paddings Padding="2px" PaddingLeft="5px" PaddingRight="5px" />
+    <ContentStyle>
+        <Border BorderWidth="1px" BorderStyle="Solid" BorderColor="#AECAF0" />
+    </ContentStyle>
+</dxtc:ASPxTabControl>

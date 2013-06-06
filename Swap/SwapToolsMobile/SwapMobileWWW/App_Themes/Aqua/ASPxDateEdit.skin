@@ -1,0 +1,18 @@
+
+<dx:ASPxDateEdit runat="server" SpriteCssFilePath="~/App_Themes/Aqua/NavBarNavigation/sprite.css" CssFilePath="~/App_Themes/Aqua/NavBarNavigation/styles.css" 
+    CssPostfix="Aqua" ShowShadow="False">
+    <CalendarProperties>
+        <FooterStyle Spacing="17px"></FooterStyle>
+        <HeaderStyle Spacing="1px"></HeaderStyle>
+    </CalendarProperties>
+    <DropDownButton>
+		<Image>
+			<SpriteProperties HottrackedCssClass="dxEditors_edtDropDownHover_Aqua" PressedCssClass="dxEditors_edtDropDownPressed_Aqua" />
+		</Image>
+	</DropDownButton>
+    <ValidationSettings>
+        <ErrorFrameStyle ImageSpacing="4px">
+            <ErrorTextPaddings PaddingLeft="4px"></ErrorTextPaddings>
+        </ErrorFrameStyle>
+    </ValidationSettings>
+</dx:ASPxDateEdit>

@@ -29,7 +29,7 @@ namespace SwapMobileWWW
             int contador = 0;
             try
             {
-                contador = ObterUltimoID() + 1;
+                contador = HumanHelper.ObterUltimoID();
 
                 SimpleSending sms = new SimpleSending(account, code);
 
@@ -39,9 +39,9 @@ namespace SwapMobileWWW
                 string msg = txbMensagem.Text+" ";
                 EncurtadorURL encurtador = new EncurtadorURL();
                 string url = ConfigurationManager.AppSettings["URLBOLETO"].ToString() + "?banco="+ddlBanco.SelectedValue+"&sacado=" + txbNome.Text + "&endereco=" + txbEndereco.Text + "&cpf=" + txbCPF.Text + "&cidade=" + txbCidade.Text + "&uf=" + txbUF.Text + "&bairro=" + txbBairro.Text + "&cep=" + txbCEP.Text+"&valor="+txbValor.Text.Replace('.',',');
-                string urlReduzida = encurtador.LengthenUrl(url);// "http://localhost:1057/BoletoBB.aspx");
+                string urlReduzida = encurtador.LengthenUrl(url);
                 msg += urlReduzida;
-                message.Message = RemoverAcentos(msg);
+                message.Message = HumanHelper.RemoverAcentos(msg);
                 contador++;
                 message.Id = contador.ToString("0000");
                 lblMsgEnviada.Text = message.Message;
@@ -53,7 +53,6 @@ namespace SwapMobileWWW
                 List<String> response = sms.send(message);
 
                 lblResultado.Text = "SMS com boleto enviado com sucesso!";
-                SalvarUltimoID(contador);
                 btnEnviar.Enabled = false;
                 btnLimpar.Enabled = true;
             }
@@ -68,98 +67,10 @@ namespace SwapMobileWWW
 
         }
 
-        private int ObterUltimoID()
-        {
-            String line;
-            int idHuman = 0;
-            try
-            {
-                //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader(Server.MapPath("/") + "\\idHuman.txt");
-
-                //Read the first line of text
-                line = sr.ReadLine();
-                idHuman = Convert.ToInt32(line);
-
-                //Continue to read until you reach end of file
-                //while (line != null)
-                //{
-                //write the lie to console window
-                //Console.WriteLine(line);
-                //Read the next line
-                //line = sr.ReadLine();
-                //}
-
-                //close the file
-                sr.Close();
-                //Console.ReadLine();
-            }
-            catch (Exception e)
-            {
-                //Console.WriteLine("Exception: " + e.Message);
-            }
-            finally
-            {
-                //Console.WriteLine("Executing finally block.");
-            }
-            return idHuman;
-
-
-        }
-
-        private void SalvarUltimoID(int p)
-        {
-            try
-            {
-                File.Delete(Server.MapPath("/")+"\\idHuman.txt");
-                //Pass the filepath and filename to the StreamWriter Constructor
-                StreamWriter sw = new StreamWriter(Server.MapPath("/") + "\\idHuman.txt");
-
-                //Write a line of text
-                sw.WriteLine(p.ToString());
-
-                //Write a second line of text
-                //sw.WriteLine("From the StreamWriter class");
-
-                //Close the file
-                sw.Close();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Exception: " + e.Message);
-            }
-            finally
-            {
-                Console.WriteLine("Executing finally block.");
-            }
-
-        }
-
-        private string RemoverAcentos(string texto)
-        {
-            string s = texto.Normalize(NormalizationForm.FormD);
-
-            StringBuilder sb = new StringBuilder();
-
-            for (int k = 0; k < s.Length; k++)
-            {
-                UnicodeCategory uc = CharUnicodeInfo.GetUnicodeCategory(s[k]);
-                if (uc != UnicodeCategory.NonSpacingMark)
-                {
-                    sb.Append(s[k]);
-                }
-            }
-            return sb.ToString();
-        }
-
-        protected void txbBairro_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         protected void btnLimpar_Click(object sender, EventArgs e)
         {
             btnEnviar.Enabled = true;
+            btnLimpar.Enabled = false;
         }
     }
 }

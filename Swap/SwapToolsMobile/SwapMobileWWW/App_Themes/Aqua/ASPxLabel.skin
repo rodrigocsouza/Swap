@@ -1,0 +1,3 @@
+
+<dx:ASPxLabel runat="server" CssPostfix="Aqua" CssFilePath="~/App_Themes/Aqua/{0}/styles.css">
+</dx:ASPxLabel>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SwapMobileWWW.Account {
+namespace SwapMobileWWW.Admin {
     
     
     public partial class Login {

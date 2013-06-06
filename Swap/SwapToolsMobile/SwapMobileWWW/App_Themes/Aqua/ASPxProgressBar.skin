@@ -1,0 +1,3 @@
+﻿
+<dx:ASPxProgressBar runat="server" Height="25px" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" CssPostfix="Aqua">
+</dx:ASPxProgressBar>

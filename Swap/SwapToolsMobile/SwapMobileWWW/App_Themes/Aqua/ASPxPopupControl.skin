@@ -1,0 +1,5 @@
+
+<dxpc:ASPxPopupControl runat="server" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" CssPostfix="Aqua" SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css">
+    <ContentStyle VerticalAlign="Top">
+    </ContentStyle>
+</dxpc:ASPxPopupControl>

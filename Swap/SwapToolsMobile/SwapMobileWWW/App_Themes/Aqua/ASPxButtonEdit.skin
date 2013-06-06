@@ -1,0 +1,7 @@
+<dx:ASPxButtonEdit runat="server" SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css" CssPostfix="Aqua" CssFilePath="~/App_Themes/Aqua/{0}/styles.css">
+    <ValidationSettings>
+        <ErrorFrameStyle ImageSpacing="4px">
+            <ErrorTextPaddings PaddingLeft="4px"></ErrorTextPaddings>
+        </ErrorFrameStyle>
+    </ValidationSettings>
+</dx:ASPxButtonEdit>

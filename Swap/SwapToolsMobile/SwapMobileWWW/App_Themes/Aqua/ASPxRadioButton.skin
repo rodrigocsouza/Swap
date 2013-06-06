@@ -1,0 +1,3 @@
+
+<dx:ASPxRadioButton runat="server" SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css" CssPostfix="Aqua" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" TextSpacing="2px">
+</dx:ASPxRadioButton>

@@ -1,0 +1,36 @@
+
+<dxrp:ASPxRoundPanel runat="server" CssPostfix="Aqua" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" 
+    SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css">
+    <Border BorderWidth="1px" BorderStyle="Solid" BorderColor="#AECAF0" />
+    <ContentPaddings Padding="14px" />
+    <HeaderStyle BackColor="#E0EDFF">
+        <BorderBottom BorderStyle="Solid" BorderWidth="1px" BorderColor="#AECAF0" />
+    </HeaderStyle>
+    <%-- Header parts --%>
+    <HeaderContent>
+        <BackgroundImage Repeat="RepeatX" VerticalPosition="Top" ImageUrl="~/App_Themes/Aqua/Web/rpHeaderBackground.gif" />
+    </HeaderContent>
+    <HeaderLeftEdge>
+        <BackgroundImage Repeat="RepeatX" VerticalPosition="Top" ImageUrl="~/App_Themes/Aqua/Web/rpHeaderBackground.gif" />
+    </HeaderLeftEdge>
+    <HeaderRightEdge>
+        <BackgroundImage Repeat="RepeatX" ImageUrl="~/App_Themes/Aqua/Web/rpHeaderBackground.gif" VerticalPosition="Top" />
+    </HeaderRightEdge>
+    <%-- Middle parts --%>
+    <TopEdge>
+        <BackgroundImage Repeat="RepeatX" VerticalPosition="Top" ImageUrl="~/App_Themes/Aqua/Web/rpTopEdge.gif" />
+    </TopEdge>
+    <NoHeaderTopEdge BackColor="#FFFFFF">
+        <BackgroundImage Repeat="RepeatX" VerticalPosition="Top" ImageUrl="~/App_Themes/Aqua/Web/rpNoHeaderTopEdge.gif" />
+    </NoHeaderTopEdge>
+    <BottomEdge>
+        <BackgroundImage Repeat="RepeatX" VerticalPosition="Bottom" ImageUrl="~/App_Themes/Aqua/Web/rpBottomEdge.gif" />
+    </BottomEdge>
+    
+    <LeftEdge>
+        <BackgroundImage Repeat="RepeatY" VerticalPosition="Top" ImageUrl="~/App_Themes/Aqua/Web/rpLeftEdge.gif" />
+    </LeftEdge>
+    <RightEdge>
+        <BackgroundImage Repeat="RepeatY" VerticalPosition="Top" ImageUrl="~/App_Themes/Aqua/Web/rpRightEdge.gif" />
+    </RightEdge>
+</dxrp:ASPxRoundPanel>

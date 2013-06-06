@@ -1,0 +1,9 @@
+
+<dx:ASPxListBox runat="server" SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css" CssPostfix="Aqua" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" LoadingPanelImagePosition="Top">
+    <ValidationSettings>
+        <ErrorFrameStyle ImageSpacing="4px">
+            <ErrorTextPaddings PaddingLeft="4px"></ErrorTextPaddings>
+        </ErrorFrameStyle>
+    </ValidationSettings>
+    <LoadingPanelImage Url="~/App_Themes/Aqua/Editors/Loading.gif"></LoadingPanelImage>
+</dx:ASPxListBox>

@@ -1,0 +1,4 @@
+
+<dxcp:ASPxCallbackPanel runat="server" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" CssPostfix="Aqua" LoadingPanelImagePosition="Top">
+    <LoadingPanelImage Url="~/App_Themes/Aqua/Web/Loading.gif"></LoadingPanelImage>
+</dxcp:ASPxCallbackPanel>

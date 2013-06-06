@@ -1,0 +1,9 @@
+
+<dxpg:ASPxPager runat="server" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" CssPostfix="Aqua" 
+    SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css" CurrentPageNumberFormat="{0}" ShowNumericButtons="True">
+    <Summary Visible="False" />
+    <NextPageButton Visible="True"></NextPageButton>
+    <PrevPageButton Visible="True"></PrevPageButton>
+    <FirstPageButton Visible="True"></FirstPageButton>
+    <LastPageButton Visible="True"></LastPageButton>
+</dxpg:ASPxPager>

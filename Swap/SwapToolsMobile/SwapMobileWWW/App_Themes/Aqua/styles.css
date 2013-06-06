@@ -1,0 +1,555 @@
+﻿body {
+  margin:0;
+  border:0;
+  padding:0;
+  height:100%; 
+  max-height:100%; 
+  
+  }
+#header {
+  position:absolute; 
+  top:0; 
+  left:0; 
+  width:100%; 
+  height:105px; 
+  overflow:auto; 
+  z-index:10000;
+}
+
+
+#footer {
+  position:absolute; 
+  bottom:0; 
+  left:0;
+  width:100%; 
+  height:50px; 
+  overflow:auto; 
+  text-align:right; 
+
+}
+
+#contents {
+  position:fixed; 
+  top:105px;
+  left:0;
+  bottom:50px; 
+  right:0; 
+  overflow:auto; 
+  margin-left:15px;
+  z-index:10000;
+  }
+.spaceRoundBox
+{
+	height:8px;
+	line-height:8px;
+}
+
+.autocomplete_completionListElement {
+	background-color:#FFFFFF;
+	border:1px solid buttonshadow;
+	color: #000000;
+	height:150px;
+	list-style-type:none;
+	margin:0 !important;
+	overflow:auto;
+	text-align:left;
+	visibility:visible;
+	/*z-index:10000;*/
+}
+.autocomplete_highlightedListItem {
+	background-color:#ffbd69;
+	color:Black;
+	padding:1px;
+	font-weight:bold;
+}
+.autocomplete_listItem {
+	background-color: inherit;
+	color: inherit;
+	padding:1px;
+}
+
+
+/* for internet explorer */
+
+* html body {
+  padding: 105px 0 50px 0; 
+}
+
+* html #contents {
+  height:100%; 
+  width:100%; 
+}
+
+.Form  {
+    background-image: url('Background.jpg');
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.BannerLime a { color: Black; }
+.BannerLime { color: Black; }
+.BannerVersion { color: White; }
+.Copyright { color: #69A7D5; }
+
+.Features b * { font-weight: normal; color: #00669B; font-size: 16px; font-family: Tahoma; }
+.RootPage {
+    color: #171D2D;
+}
+.RootPage a { color: #171D2D; }
+/* Label for Appearance combobox */
+.lblSkins { color: #FFFFFF; }
+.Title h1.h1Blue { color: #0E5ED5; }
+.Slogan { color: White!important; }
+.MainBanner { margin-right: 45px; margin-top: 38px!important; padding-bottom: 25px; }
+.MiniSlogan { color: #FFF4CC!important; }
+.ContentMargin { margin-left: 0px!important; }
+.HeaderPanel { padding-bottom: 45px!important; }
+.AlturaTreeHead{ height: 30px;}
+.userName
+{
+	position:absolute;
+	left:823px;
+	top:80px;
+	width:200px;
+	height:24px;
+	clear:right;
+	line-height:24px;
+	text-align:right;
+	font-family: Tahoma;
+	font-size:9pt;
+	
+	
+	
+}
+
+.dxnbGroupContent_Aqua
+{
+	color:#283b56 !important;
+}
+
+/* Icon menu */
+.dxmMenu_Demo
+{
+	color: #FFFFFF;
+}
+.dxmMenuSeparator_Demo
+{
+    width: 1px!important;
+    height: 15px!important;
+	background-color: #FFFFFF;
+}
+.dxmMenu_Demo a
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+/* Header for TitleImage Area*/
+.DetailsPageHeader 
+{
+    border: Solid 1px #AECAF0;
+    background-color: #C7DDFD;
+    padding: 10px 26px;
+    width: 100%;
+}
+.DetailsPageHeaderBottom {
+    height: 0px;
+    border-left: Solid 1px #AECAF0;
+    border-right: Solid 1px #AECAF0;
+    background-color: #D8E8FF;
+}
+.DetailsPageLeftEdgeHeader { display: none; }
+.DetailsPageRightEdgeHeader { display: none; }
+.DetailsPageLeftEdge { display: none; }
+.DetailsPageRightEdge {	display: none; }
+.DetailsPageEdge { width: 3px!important; }
+
+.DetailsPageContent 
+{
+	color: #171D2D;
+    background-color: White;
+    border-left: Solid 1px #AECAF0;
+    border-right: Solid 1px #AECAF0;
+    padding: 30px;
+}
+.DetailsPageFooter {
+    width: 100%; 
+    background-color: #AECAF0;
+}
+.DetailsSorceCodeArea {
+    width: 100%; 
+    padding-top: 21px;
+}
+
+.DropDownWindow
+{
+	overflow-y:auto;
+	height:350px;
+	margin:0px;
+	padding:0px;
+	font-family:Tahoma;
+	font-size:9pt;
+	
+	
+}
+
+.CheckBoxList
+{
+	width:134px;
+	cursor:pointer;
+}
+
+/*	Style: Page Content */
+
+.pageContent
+{
+	
+}
+
+/*	Style: Header  */
+.pageTop
+{
+	width:1024px;
+	height:80px;
+	background-image: url(../../images/top_r1_c2.gif);
+	background-repeat:repeat-x;
+	background-position:top;
+	border-right:solid 1px #aecaf0;
+	z-index:10000;
+}
+
+.logo
+{
+	position:relative;
+	left:10px;
+	top: 20px;
+	
+}
+
+.menu
+{
+	background-image: url(../../images/menu_background.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	height:25px;
+	width:1024px;
+	bottom:0px;
+	border-right:solid 1px #aecaf0;
+	
+	/*position:absolute;
+	z-index:11000;*/
+}
+
+.testMenu
+{
+	z-index:9999999999999999;
+}
+
+
+
+.pageTitle
+{
+	border-color:Blue;
+}
+
+.pageBody
+{
+	margin-left: 10px;
+	padding:0px;
+	overflow-x:auto;
+	height:100%;
+	max-height:99%;
+}
+
+/* Grid View */
+
+.gridView
+{
+	font-size:11px;
+	font-style:normal;
+	font-family:Arial,Verdana,Segoe UI;
+}
+
+.gridView .gridViewRow
+{
+	
+	
+}
+
+fieldset.fdtFilters
+{
+	border: solid 1px #AECAF0;
+	border-width:1px;
+	width:1020px;
+	padding: 15px 5px 15px 15px;
+	
+}
+
+fieldset
+{
+	border-color:Blue;
+	border-width:1px;
+	width:100%;
+	padding-left:10px;
+	
+}
+hr
+{
+	
+	width:1020px;
+	border: solid 1px #aecaf0;
+}
+legend ,.pageTitle
+{
+	font-family:Segoe UI;
+	color:#021B8F;
+	font-weight:bold;
+}
+
+legend
+{
+	padding-left:3px;
+	font-size:11px;
+	position:static
+}
+
+.pagetitle
+{
+	font-size:10px;
+}
+
+.contentScrool
+{
+	overflow-x:auto;
+	overflow-y:hidden;
+	width:1010px;
+	height:500px;
+}
+
+.totalResume
+{
+	border-color:Blue;
+	border-width:1px;
+	border-style:solid;
+	width:1010px;
+	margin: 10px 0px 10px 0px;
+	padding: 5px 0px 5px 5px;
+	
+}
+
+.contentFilters
+{
+	
+}
+
+.autocomplete_completionListElement {
+	background-color:inherit;
+	border:1px solid buttonshadow;
+	color: #000000;
+	height:150px;
+	list-style-type:none;
+	margin:0 !important;
+	overflow:auto;
+	text-align:left;
+	visibility:hidden;
+	z-index:2000;
+}
+.autocomplete_highlightedListItem {
+	background-color:#5D7B9D;
+	color:White;
+	padding:1px;
+	font-weight:bold;
+}
+.autocomplete_listItem {
+	background-color: inherit;
+	color: inherit;
+	padding:1px;
+}
+
+div.login
+{
+	/*
+	font-family:Segoe UI, Arial, Sans-Serif;
+	font-size:10pt;
+	background-image: url(../../images/login_r1_c1.gif);
+	background-position:top;
+	background-repeat:no-repeat;
+	width:394px;
+	height:402px;
+	border-style:solid;
+	border-color:#5A53DB;
+	border-width:1px;
+	padding:0px;
+	margin:0px;
+	clear: both;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px; 
+	margin-left: -175px;
+	*/
+}
+
+table.login
+{
+	font-family:Segoe UI, Arial, Sans-Serif;
+	font-size:10pt;
+	width:440px;
+	height:450px;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	clear: both;
+	position:absolute;
+	top: 47%;
+	left: 47%;
+	margin-top: -220px; /*set to a negative number 1/2 of your height*/
+	margin-left: -175px;
+	
+}
+
+table.login td
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+table.login .loginTop
+{
+	background-image: url(../../images/login_r1_c1.gif);
+	background-position: center top ;
+	background-repeat:no-repeat;
+	height:77px;
+	padding:0px;
+	border:0px;
+	margin:0px;
+}
+
+table.login .loginBody
+{
+	margin:0px;
+	border-bottom-width: 0px  ;
+	border-top-width: 0px  ;
+	padding:0px;
+	height:215px;
+	border-left:solid 1px #7498cf;
+	border-right:solid 1px #7498cf;
+}
+
+table.login .loginBottom
+{
+	background-image: url(../../images/login_r3_c1.gif);
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	height:58px;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	
+}
+
+.loginFields
+{
+	
+	border:0px ;
+	margin:0px;
+	
+}
+
+.loginFields .loginEntry
+{
+	padding: 5px 0 5px 0;
+}
+
+.loginFields input[type=text]
+{
+	border: solid 1px #6D98CF;
+	width:150px;
+	font-weight:bold;
+	font-size:9pt;
+}
+
+.loginFields input[type=password]
+{	
+	border: solid 1px #6D98CF;
+	width:150px;
+}
+
+.loginFields label
+{
+	color:#2c4d79 !important;
+	font-weight:bold;
+	
+}
+.loginBottom 
+{
+	color:White;
+	font-size:9px;
+}
+
+
+.loginFields input[type=submit]
+{
+	background-color:#4F78A0;
+	font-weight:bold;
+	color:White;
+	border-color:#5A53DB;
+	border-width:1px;
+}
+.div#what
+{
+	position:relative;
+	left:50px;
+	bottom:230px;
+	margin-left:16px;
+	
+}
+.div#what p#Title
+{
+	font-family:Arial;
+	font-size:9pt;
+	
+}
+
+.description
+{
+	font-size:8pt;
+	font-style:normal;
+	font-family:Segoe UI;
+	vertical-align:bottom;
+	color:#2C4D79;
+	padding: 0px 2px 0px 2px;
+	
+}
+
+.dxWeb_rpHeaderTopLeftCorner_Aqua {
+	BACKGROUND-IMAGE: url(/images/login/Roundpanel_r1_c1.gif); BACKGROUND-COLOR: transparent; BACKGROUND-REPEAT: no-repeat; -background-image: url('../../images/login/Roundpanel_r1_c1.gif')
+}
+
+.dxWeb_rpHeaderTopRightCorner_Aqua {
+	BACKGROUND-IMAGE: url(/ITT/DXR.axd?r=0_2165); BACKGROUND-COLOR: transparent; BACKGROUND-REPEAT: no-repeat; -background-image: url('/ITT/DXR.axd?r=0_2166')
+}
+.msgErro
+{
+    padding-left:       20px;
+    margin-top:         100px;
+    font-family:        Verdana;
+    color:              #4b395b;
+}
+
+.msgErroUsu
+{
+    text-align:         center;
+    font-size:          14pt;
+}
+
+.msgErroInf
+{
+    margin-top:         40px;
+    color:              gray;
+}
+
+.msgErroDet
+{
+    margin-top:         40px;
+    color:              gray;
+}

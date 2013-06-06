@@ -1,0 +1,7 @@
+
+<dxnb:ASPxNavBar runat="server" CssPostfix="Aqua" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css" 
+    GroupSpacing="1px">
+    <ItemStyle ImageSpacing="10px" />
+    <GroupContentStyle ItemSpacing="1px" />    
+    <LoadingPanelImage Url="~/App_Themes/Aqua/Web/nbLoading.gif" />
+</dxnb:ASPxNavBar>

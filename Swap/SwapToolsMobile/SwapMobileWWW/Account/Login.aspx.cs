@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using SwapMobile;
 using System.Web.Security;
 
-namespace SwapMobileWWW.Account
+namespace SwapMobileWWW.Admin
 {
     public partial class Login : System.Web.UI.Page
     {

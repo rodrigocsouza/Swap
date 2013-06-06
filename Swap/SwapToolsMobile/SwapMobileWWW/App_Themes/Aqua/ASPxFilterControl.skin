@@ -1,0 +1,8 @@
+
+<dx:ASPxFilterControl runat="server">
+	<Images SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css">
+	    <LoadingPanel Url="~/App_Themes/Aqua/Editors/Loading.gif"></LoadingPanel>
+	</Images>
+	<Styles CssFilePath="~/App_Themes/Aqua/{0}/styles.css" CssPostfix="Aqua"></Styles>
+	<SettingsLoadingPanel ImagePosition="Top" />
+</dx:ASPxFilterControl>

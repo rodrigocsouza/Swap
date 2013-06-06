@@ -1,0 +1,15 @@
+
+<dx:ASPxComboBox runat="server" SpriteCssFilePath="~/App_Themes/Aqua/{0}/sprite.css" CssFilePath="~/App_Themes/Aqua/{0}/styles.css" 
+    CssPostfix="Aqua" LoadingPanelImagePosition="Top" ShowShadow="False">
+    <DropDownButton>
+		<Image>
+			<SpriteProperties HottrackedCssClass="dxEditors_edtDropDownHover_Aqua" PressedCssClass="dxEditors_edtDropDownPressed_Aqua" />
+		</Image>
+	</DropDownButton>
+    <ValidationSettings>
+        <ErrorFrameStyle ImageSpacing="4px">
+            <ErrorTextPaddings PaddingLeft="4px"></ErrorTextPaddings>
+        </ErrorFrameStyle>
+    </ValidationSettings>
+    <LoadingPanelImage Url="~/App_Themes/Aqua/Editors/Loading.gif"></LoadingPanelImage>
+</dx:ASPxComboBox>
